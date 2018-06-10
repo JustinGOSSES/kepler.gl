@@ -5,7 +5,9 @@
 For what it is capable of, take a look at [kepler.gl demo app](https://uber.github.io/kepler.gl/#/demo).
 
 Kepler.gl is a redux component that uses redux reducer to store and manage state transitions.
-This package consists of a reducer and the UI components to render and customize the map.
+This package consists of a reducer and the UI components to render and customize the map. 
+
+For information on how to save the map state you've created and have it persist after you've closed the browser, take a look at [this tutorial on vis.academy](http://vis.academy/#/kepler.gl/).
 
 ## User guide
 Check out [kepler.gl's user documentation here](docs/a-introduction.md)
@@ -22,6 +24,8 @@ Install node (`> 6`), yarn, and project dependencies
 npm install --save kepler.gl
 ```
 
+Get a [Mapbox Access Token](https://www.mapbox.com/help/define-access-token/).
+
 ### Local dev
 ```
 npm install
@@ -32,7 +36,9 @@ yarn --ignore-engines
 ```
 then
 ```
-MapboxAccessToken=MapboxAPIKey npm start
+export MapboxAccessToken=<insert_your_token>
+
+npm start
 ```
 An Example app will be served at
 http://localhost:8080/
